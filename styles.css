@@ -1,9 +1,38 @@
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.days {
-    display: inline-block;
+#header {
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-family: "Dancing Script";
+}
+
+#container-title {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.4em;
+    font-size: 1.2em;
+}
+
+
+#days-liste {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+header, button, footer {
+    background-color: #FFE8A3;
 }
