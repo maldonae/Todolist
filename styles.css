@@ -1,38 +1,51 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 #header {
-    height: 30vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    font-family: "Dancing Script";
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Dancing Script";
 }
 
 #container-title {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 0.4em;
-    font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.4em;
+  font-size: 1.2em;
 }
-
 
 #days-liste {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-    font-size: 1.2em;
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-header, button, footer {
-    background-color: #FFE8A3;
+header,
+button,
+footer {
+  background-color: #ffe8a3;
+}
+footer img {
+  width: 100px;
+  margin-left: 1em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+  background-color: #ffe8a3;
 }
