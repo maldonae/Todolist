@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "dancing_script";
+  src: url("fonts/dancing_script/dancing_script.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  font-family: "Dancing Script";
+  font-family: "dancing_script";
 }
 
 #container-title {
