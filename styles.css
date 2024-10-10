@@ -12,6 +12,27 @@
   font-family: "Dancing Script";
 }
 
+main {
+  background-image: url("../js-lyon-0924-P1-tousdoux/images/backgroundmain.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 2em;
+  margin-right: 2em;
+  color: rgb(10, 10, 10);
+  padding-left: 0;
+  text-align: center;
+  gap: 2em;
+}
+
+main img {
+width: 20em;
+height: 10em;
+}
+
 #container-title {
   display: flex;
   justify-content: center;
