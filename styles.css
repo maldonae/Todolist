@@ -28,6 +28,9 @@
   font-weight: bold;
 }
 
+ul.list {
+  padding: 0;
+}
 li {
   list-style: none;
 }
@@ -48,4 +51,39 @@ footer {
   align-content: space-evenly;
   justify-content: center;
   background-color: #ffe8a3;
+}
+
+#lists-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 2em; */
+}
+
+article:first-of-type{
+  padding-top: 2em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+button {
+  padding: 0.2em 2em; /* a changer si nécessaire */
+}
+
+article button{
+  margin-top: 1em;
+}
+  
+h2{
+  margin-bottom: 1em;
+}
+
+.list-element{
+   padding: 0;
 }
