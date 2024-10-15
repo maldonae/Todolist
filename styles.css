@@ -63,6 +63,9 @@ main {
 	font-weight: bold;
 }
 
+ul.list {
+	padding: 0;
+}
 li {
 	list-style: none;
 }
@@ -86,7 +89,10 @@ footer {
 }
 
 article {
-	height: 15em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2em;
 	margin-bottom: 1.5em;
 	border: 2.5px solid #ffc7c2;
 	background-color: #fbeee6;
@@ -96,6 +102,7 @@ article {
 	margin-right: 2.5em;
 	margin-top: 1em;
 	text-align: center;
+	width: 26em;
 }
 
 button {
@@ -103,6 +110,7 @@ button {
 	padding: 0.5em;
 	width: 10em;
 	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 article.articles-notes {
@@ -118,4 +126,20 @@ li.day {
 	border-radius: 4px;
 	width: 1.5em;
 	text-align: center;
+}
+
+#lists-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* gap: 2em; */
+}
+
+h2 {
+	margin-bottom: 1em;
+}
+
+.list-element {
+	padding: 0;
 }
