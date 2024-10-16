@@ -2,9 +2,17 @@
 function createList(tache, liste) {
 	const tacheAEffectuer = document.createElement("li");
 	tacheAEffectuer.classList.add("list-element");
+
 	tacheAEffectuer.textContent = tache;
+
+	const checkbox = document.createElement("input");
+	checkbox.type = "checkbox";
+
+	tacheAEffectuer.appendChild(checkbox);
+
 	liste.appendChild(tacheAEffectuer);
 }
+
 /*concerne les priorités*/
 const tacheAAjouter = document.getElementById("liste-priorites");
 const buttonAjoutPriorites = document.getElementById("bouton-priorites");
