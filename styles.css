@@ -142,4 +142,11 @@ h2 {
 
 .list-element {
 	padding: 0;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	display: flex;
+}
+
+.task {
+	margin-left: 0.5em;
 }
