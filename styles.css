@@ -1,152 +1,158 @@
 @font-face {
-	font-family: "dancing_script";
-	src: url("fonts/dancing_script/dancing_script.ttf");
+  font-family: "dancing_script";
+  src: url("fonts/dancing_script/dancing_script.ttf");
 }
 
 @font-face {
-	font-family: "a_note_front";
-	src: url("fonts/a_note_front/A\ Note.ttf");
+  font-family: "a_note_front";
+  src: url("fonts/a_note_front/A\ Note.ttf");
 }
 
 @font-face {
-	font-family: "andika";
-	src: url("fonts/andika/Andika-Regular.ttf");
+  font-family: "andika";
+  src: url("fonts/andika/Andika-Regular.ttf");
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 #header {
-	height: 30vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	gap: 15px;
-	font-family: "dancing_script";
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  font-family: "dancing_script";
 }
 
 header img {
-	width: 60px;
-	height: 60px;
-	margin-left: 1em;
+  width: 60px;
+  height: 60px;
+  margin-left: 1em;
 }
 
 #lists-container {
-	background-image: url("images/backgroundmain.jpg");
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
-	margin: 0;
-	padding: 0;
+  background-image: url("images/backgroundmain.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
 main {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #container-title {
-	display: flex;
-	justify-content: center;
-	letter-spacing: 0.4em;
-	font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.4em;
+  font-size: 1.2em;
 }
 
 #days-liste {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
-	padding: 0;
-	font-size: 1.2em;
-	font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  list-style: none;
 }
 
 ul.list {
-	padding: 0;
+  padding: 0;
 }
-li {
-	list-style: none;
+
+.list-element {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1em;
+  justify-content: flex-end;
 }
 
 header,
 button,
 footer {
-	background-color: #ffe8a3;
+  background-color: #ffe8a3;
 }
 footer img {
-	width: 100px;
-	margin-left: 1em;
+  width: 100px;
+  margin-left: 1em;
 }
 
 footer {
-	display: flex;
-	align-items: center;
-	align-content: space-evenly;
-	justify-content: center;
-	background-color: #ffe8a3;
+  display: flex;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: center;
+  background-color: #ffe8a3;
 }
 
 article {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 1.5em;
-	border: 2.5px solid #ffc7c2;
-	background-color: #fbeee6;
-	border-radius: 10px;
-	padding: 10px;
-	margin-left: 2.5em;
-	margin-right: 2.5em;
-	margin-top: 1em;
-	text-align: center;
-	width: 26em;
-	height: 18em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
+  border: 2.5px solid #ffc7c2;
+  background-color: #fbeee6;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+  margin-top: 1em;
+  text-align: center;
+  width: 26em;
+  height: 18em;
 }
 
 button {
-	border-radius: 15px;
-	padding: 0.5em;
-	width: 10em;
-	margin-top: 2em;
-	margin-bottom: 1em;
+  border-radius: 15px;
+  padding: 0.5em;
+  width: 10em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 article.articles-notes {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 ul {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 li.day {
-	border: 2.5px solid;
-	border-radius: 4px;
-	width: 1.5em;
-	text-align: center;
+  border: 2.5px solid;
+  border-radius: 4px;
+  width: 1.5em;
+  text-align: center;
 }
 
 #lists-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	/* gap: 2em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 2em; */
 }
 
 h2 {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .list-element {
-	padding: 0;
-	flex-direction: row-reverse;
-	justify-content: flex-end;
-	display: flex;
+  padding: 0;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  display: flex;
 }
 
 .task {
-	margin-left: 0.5em;
+  margin-left: 0.5em;
 }
