@@ -1,16 +1,27 @@
 /*ajout dans n'importe quelle liste.*/
 function createList(tache, liste) {
+	console.log(tache);
 	const tacheAEffectuer = document.createElement("li");
 	tacheAEffectuer.classList.add("list-element");
 
-	tacheAEffectuer.textContent = tache;
+	tacheAEffectuer.innerHTML = `<p class="task">${tache}</p>`;
 
 	const checkbox = document.createElement("input");
+	checkbox.id = "checkbox";
 	checkbox.type = "checkbox";
 
 	tacheAEffectuer.appendChild(checkbox);
 
 	liste.appendChild(tacheAEffectuer);
+
+	checkbox.addEventListener("change", (event) => {
+		const isChecked = event.target.checked;
+		if (isChecked) {
+			liste.style.textDecoration = "line-through";
+		} else {
+			liste.style.textDecoration = "none";
+		}
+	});
 }
 
 /*concerne les priorités*/
