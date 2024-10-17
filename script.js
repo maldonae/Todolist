@@ -32,7 +32,7 @@ const arrayPrio = document.getElementsByClassName("list-element-priorite");
 buttonAjoutPriorites.addEventListener("click", () => {
   if (arrayPrio.length < 5) {
     const clickButton = prompt("Quelle priorité souhaitez-vous ajouter ?");
-    createList(clickButton, tacheAAjouter);
+    createList(clickButton, tacheAAjouter, "list-element-priorite");
     alert("Priorité ajoutée avec succès !");
   } else {
     alert("Tu te prends pour un warrior ?");
@@ -62,7 +62,7 @@ const arrayToDo = document.getElementsByClassName("list-element-todo");
 buttonAjoutToDoList.addEventListener("click", () => {
   if (arrayToDo.length < 5) {
     const clickButton = prompt("Quelle tâche souhaitez-vous ajouter ?");
-    createList(clickButton, toDoAAjouter);
+    createList(clickButton, toDoAAjouter, "list-element-todo");
     alert("Tâche ajoutée avec succès !");
   } else {
     alert("Calmos !!!!");
