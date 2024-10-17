@@ -1,8 +1,8 @@
 /*ajout dans n'importe quelle liste.*/
-function createList(tache, liste) {
-  console.log(tache);
-  const tacheAEffectuer = document.createElement("li");
-  tacheAEffectuer.classList.add("list-element");
+function createList(tache, liste, strClass) {
+	console.log(tache);
+	const tacheAEffectuer = document.createElement("li");
+	tacheAEffectuer.classList.add(strClass);
 
   tacheAEffectuer.innerHTML = `<p class="task">${tache}</p>`;
 
@@ -27,29 +27,36 @@ function createList(tache, liste) {
 /*concerne les priorités*/
 const tacheAAjouter = document.getElementById("liste-priorites");
 const buttonAjoutPriorites = document.getElementById("bouton-priorites");
+const arrayPrio = document.getElementsByClassName("list-element-priorite");
 
 buttonAjoutPriorites.addEventListener("click", () => {
-  const answer = prompt("Quelle priorité souhaitez-vous ajouter ?");
-  createList(answer, tacheAAjouter);
-  alert("Priorité ajoutée avec succès !");
+	const clickButton = prompt("Quelle priorité souhaitez-vous ajouter ?");
+	createList(clickButton, tacheAAjouter);
+	alert("Priorité ajoutée avec succès !");
 });
 
 /*concerne les objectifs*/
 const buttonAjoutObjectifs = document.getElementById("bouton-objectifs");
 const objectifsAAjouter = document.getElementById("liste-objectifs");
+const arrayObjectifs = document.getElementsByClassName("list-element-objectif");
 
 buttonAjoutObjectifs.addEventListener("click", () => {
-  const clickButton = prompt("Quel objectif souhaitez-vous ajouter ?");
-  createList(clickButton, objectifsAAjouter);
-  alert("Objectif ajouté avec succès !");
+	if (arrayObjectifs.length < 5) {
+		const clickButton = prompt("Quel objectif souhaitez-vous ajouter ?");
+		createList(clickButton, objectifsAAjouter, "list-element-objectif");
+		alert("Objectif ajouté avec succès !");
+	} else {
+		alert("T'es ambitieux toi !");
+	}
 });
 
 /*concerne la to do List*/
 const buttonAjoutToDoList = document.getElementById("bouton-to-do");
 const toDoAAjouter = document.getElementById("liste-to-do");
+const arrayToDo = document.getElementsByClassName("list-element-todo");
 
 buttonAjoutToDoList.addEventListener("click", () => {
-  const clickButton = prompt("Quelle tâche souhaitez-vous ajouter ?");
-  createList(clickButton, toDoAAjouter);
-  alert("Tâche ajoutée avec succès !");
+	const clickButton = prompt("Quelle tâche souhaitez-vous ajouter ?");
+	createList(clickButton, toDoAAjouter);
+	alert("Tâche ajoutée avec succès !");
 });
